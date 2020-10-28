@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Practica 00 - APIs</title>
     <link rel="stylesheet" href="../css/estilo.css">
+    <script type="text/javascript" src="../javascript/query.js"></script>
 </head>
 <body>
 
@@ -13,19 +14,18 @@
         <form>
             <fieldset>
                 <div class="field"> 
-                    <label>Nombre o identidad del héroe:</label>
-                    <input type="search" class="text" id="hero" name="hero"  placeholder="Tony Stark"/>
+                    <label>Nombre del superhéroe:</label>
+                    <input type="search" class="text" id="hero" name="hero"  placeholder="Iron Man"/>
                 </div>
-                <button type="submit">Buscar</button>
+                <button type="button" onclick="search(this)">Buscar</button>
             </fieldset>
         </form>
     </section>
 
-    <section class="container">
-        <div id="heros">
-            <span id="song_title"></span>
-            <span id="song_lyric"></span>
-        </div>
+    <section class="container-table">
+        <table id="heros">
+
+        </table>
     </section>
     
 </body>

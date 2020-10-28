@@ -12,10 +12,10 @@ body {
 	clear: none;
 	float: none;
     min-height: 100%;
-    background-color: black;
-    background-image: url("../Resources/3425151.jpg") ;
+    background-color: whitesmoke;
+    /*background-image: url("../Resources/3425151.jpg") ;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: cover;*/
 }
 
 h1 {
@@ -25,6 +25,7 @@ h1 {
     margin: 0.5em auto;
     color: snow;
     background-color: #333333;
+    border-radius: 100px;
 }
 
 
@@ -34,9 +35,16 @@ h1 {
     position: relative;
 }
 
-fieldset, #heroes {
+.container-table {
+    margin: 0% auto;
+    width: 90%;
+    position: relative;
+}
+
+fieldset {
     background-color: #333333;
     margin: 2em 5em;
+    border-radius: 25px;
 }
 
 input.text, button, label {
@@ -51,6 +59,7 @@ label {
 
 button {
     margin: 1em 13em;
+    border-radius: 10px;
 }
 
 .field {
