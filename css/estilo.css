@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+html {
+	height: 100%;
+}
+
+body {
+    margin: 0% auto;
+	width: 90%;
+	padding-left: 5%;
+	padding-right: 5%;
+	clear: none;
+	float: none;
+    min-height: 100%;
+    background-color: black;
+    background-image: url("../Resources/3425151.jpg") ;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h1 {
+    font-family: Source Sans Pro;
+    font-size: 50px;
+    text-align: center;
+    margin: 0.5em auto;
+    color: snow;
+    background-color: #333333;
+}
+
+
+.container {
+    margin: 0% auto;
+    width: 60%;
+    position: relative;
+}
+
+fieldset, #heroes {
+    background-color: #333333;
+    margin: 2em 5em;
+}
+
+input.text, button, label {
+    font-family: Source Sans Pro;
+    font-size: 20px;
+}
+
+label {
+    color: snow;
+    margin: 0.5em;
+}
+
+button {
+    margin: 1em 13em;
+}
+
+.field {
+    display: grid;
+}
