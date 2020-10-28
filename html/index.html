@@ -11,13 +11,10 @@
     <section class="container">
         <h1>Superhero Finder</h1>
 
-        <form>
+        <form onsubmit="search(); return false">
             <fieldset>
-                <div class="field"> 
-                    <label>Nombre del superhéroe:</label>
-                    <input type="search" class="text" id="hero" name="hero"  placeholder="Iron Man"/>
-                </div>
-                <button type="button" onclick="search(this)">Buscar</button>
+                <input type="search" class="text" id="hero" name="hero"  placeholder="Ingrese un héroe o villano..."/>
+                <button type="submit"><img src="../resources/icons/lupa.svg" alt="search"></button>
             </fieldset>
         </form>
     </section>

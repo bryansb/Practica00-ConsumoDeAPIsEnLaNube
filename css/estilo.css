@@ -6,9 +6,9 @@ html {
 
 body {
     margin: 0% auto;
-	width: 90%;
-	padding-left: 5%;
-	padding-right: 5%;
+    width: 97%;
+    padding-top: 1%;
+    padding-bottom: 5%;
 	clear: none;
 	float: none;
     min-height: 100%;
@@ -22,10 +22,11 @@ h1 {
     font-family: Source Sans Pro;
     font-size: 50px;
     text-align: center;
-    margin: 0.5em auto;
+    margin: 0.2em 3em;
+    padding: 0.2em 0.4em;
     color: snow;
     background-color: #333333;
-    border-radius: 100px;
+    border-radius: 84px;
 }
 
 
@@ -37,31 +38,53 @@ h1 {
 
 .container-table {
     margin: 0% auto;
-    width: 90%;
+    width: 100%;
     position: relative;
 }
 
 fieldset {
     background-color: #333333;
-    margin: 2em 5em;
+    margin: 2em auto;
     border-radius: 25px;
 }
 
-input.text, button, label {
+input.text{
     font-family: Source Sans Pro;
-    font-size: 20px;
-}
-
-label {
-    color: snow;
-    margin: 0.5em;
+    font-size: 25px;
 }
 
 button {
-    margin: 1em 13em;
-    border-radius: 10px;
+    border-radius: 100px;
 }
 
-.field {
-    display: grid;
+table {
+    font-family: Source Sans Pro;
+    text-align: center;
+    border: 1px black solid;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table thead {
+    color: white;
+    background-color: #454545;
+}
+
+table tbody {
+    color: black;
+    background-color: #C0C0C0;
+}
+
+img {
+    width: 75px;
+    margin: 5% auto;
+}
+
+.td-img {
+    width: 100px;
+}
+
+th, td {
+    border: 1px black solid;
+    padding: 0em 0.9em;
 }
