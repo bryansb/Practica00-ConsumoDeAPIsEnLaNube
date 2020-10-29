@@ -21,9 +21,10 @@ function search(){
         } else {
             xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
         }
+        xmlhttp.responseType = 'json';
         xmlhttp.onreadystatechange = function(){
             if (this.readyState == 4 && this.status == 200){
-                information = JSON.parse(this.responseText);
+                information = xmlhttp.response;
                 currentPage = 0;
                 printInformation();
             }
