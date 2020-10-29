@@ -127,7 +127,7 @@ th, td {
     background-color: #D5D8DC;
 }
 
-#hero_empty {
+#hero_empty, #hero_unavalaible {
     font-size: 30px;
 }
 

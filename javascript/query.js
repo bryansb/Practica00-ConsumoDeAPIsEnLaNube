@@ -30,6 +30,11 @@ function search(){
             }
         };
 
+        xmlhttp.onerror = function(){
+            document.getElementById("heros").innerHTML = unavalaible;
+            hideNavigation();
+        };
+
         xmlhttp.open("GET","https://www.superheroapi.com/api.php/"+ACCESSTOKEN+"/search/"+sHero, true);
         xmlhttp.send();
     }
@@ -40,9 +45,9 @@ function printInformation(){
 
     var header = "<thead>"+
     "<tr>"+
-    "  <th rowspan=\"2\">ID</th>"+
+    "  <th rowspan='2'>ID</th>"+
     "  <th rowspan=\"2\">Nombre</th>"+
-    "  <th class='td-img' rowspan=\"2\">Foto</th>"+
+    "  <th class='td-img' rowspan='2'>Foto</th>"+
     "  <th colspan=\"6\">Estadísticas</th>"+
     "  <th colspan=\"4\">Bibliografía</th>"+
     "  <th colspan=\"6\">Apariencia</th>"+
@@ -73,6 +78,10 @@ function printInformation(){
     maxPages = Math.trunc((information.results.length - 1) / N);
     var min = currentPage * N;
     var max = min + (N - 1);
+
+    if (max >= information.results.length) {
+        max = information.results.length - 1;
+    }
 
     var infoHero = getHeroInfo(min, max, information);
 
