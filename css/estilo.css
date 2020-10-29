@@ -44,17 +44,25 @@ h1 {
 
 fieldset {
     background-color: #333333;
-    margin: 2em auto;
+    margin: 2em 15em;
     border-radius: 25px;
 }
 
 input.text{
     font-family: Source Sans Pro;
     font-size: 25px;
+    border-radius: 15px;
+    width: 320px;
+    margin: 0.5em 0em;
 }
 
 button {
-    border-radius: 100px;
+    border-radius: 60px;
+    width: 50px;
+}
+
+.icon {
+    width: 30px;
 }
 
 table {
